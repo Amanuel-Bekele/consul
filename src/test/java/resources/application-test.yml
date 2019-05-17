@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      enabled: true
+      discovery:
+        instance-id: ${spring.application.name}-instance
+        port: 8084
+        health-check-url: /${spring.application.name}/health-check
